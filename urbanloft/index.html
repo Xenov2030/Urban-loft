@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Loft | Diamond Legacy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="bg-mesh"></div>
+
+    <header id="main-header" class="header-smart">
+        <div class="nav-wrapper">
+            <div class="logo">URBAN LOFT<span class="metallic-loft"></span></div>
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-item">Catalogo</a>
+                <a href="#contactanos" class="nav-item">Contactanos</a>
+                <a href="#sobre-nosotros" class="nav-item">Sobre Nosotros</a>
+            </nav>
+            <div class="nav-controls">
+                <button id="music-toggle" class="theme-btn">🎵</button>
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-gold">
+    <div class="hero-title-wrapper">
+        <h1 class="staggered-text reveal">
+            Diamond <br> 
+            <span class="thin-italic">Legacy</span>
+        </h1>
+    </div>
+
+    <div id="filter-bar" class="filter-master glass-premium reveal">
+        </div>
+
+            
+            <div id="filter-bar" class="filter-master glass-premium">
+                <div class="filter-group">
+                    <span class="filter-label">Filtro de Activos</span>
+                    <div class="tabs-luxury">
+                        <button class="tab-luxe active" data-category="all">Todos</button>
+                        <button class="tab-luxe" data-category="Estudio">Estudios</button>
+                        <button class="tab-luxe" data-category="Loft">Lofts</button>
+                        <button class="tab-luxe" data-category="Penthouse">Penthouses</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <span class="filter-label">Inversión Máxima: <span id="range-val">$1200</span></span>
+                    <input type="range" id="price-slider" class="luxury-range-input" min="100" max="1200" value="1200">
+                </div>
+            </div>
+        </section>
+
+        <section id="property-grid" class="property-grid-gold"></section>
+
+       <section id="sobre-nosotros" class="about-section">
+    <div class="about-container">
+        <header class="editorial-header reveal">
+            <span class="section-tag">Urban Loft Manifesto</span>
+            <h2 class="about-title">Elevando el <br> <span class="thin-italic">Horizonte Urbano</span></h2>
+        </header>
+
+        <div class="magazine-layout">
+            <div class="editorial-text reveal">
+                <div class="vertical-line-accent"></div>
+                <p class="drop-cap">
+                    Urban Loft no nació en una oficina, sino de una frustración. En 2018, nuestro fundador comprendió que el ejecutivo moderno estaba atrapado entre dos mundos: la frialdad impersonal de los hoteles de cinco estrellas y la falta de estándares de las plataformas convencionales.
+                </p>
+                <p>
+                    Faltaba un espacio que entendiera que el lujo no es solo mármol y vistas al skyline, sino la <span class="highlight-editorial">tecnología invisible</span>, el diseño de vanguardia y un servicio que se adelanta a tus deseos.
+                </p>
+                <p>
+                    Decidimos que cada propiedad debía pasar un filtro obsesivo. Si la luz del atardecer no entra de una forma específica por sus ventanales, no es un <span class="highlight-editorial">estándar Gold</span>. Bienvenidos a la nueva era del habitar ejecutivo.
+                </p>
+            </div>
+
+            <div class="magazine-art reveal">
+                <div class="image-wrapper-editorial">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600" alt="Arquitectura Minimalista" class="editorial-img">
+                    <div class="img-overlay-diamond"></div>
+                </div>
+                <span class="image-caption">Urban Loft Archive / District 01 — 2024</span>
+            </div>
+        </div>
+
+        <div class="editorial-footer reveal">
+            <button class="btn-confirm-reserva" style="width: auto; padding: 15px 40px;" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                EXPLORA LA COLECCIÓN
+            </button>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+<section id="contactanos" class="contact-editorial reveal">
+    <div class="contact-container">
+        <div class="contact-info">
+            <span class="section-tag">Concierge Service</span>
+            <h2 class="about-title">Hablemos de su <br> <span class="thin-italic">Próxima Inversión</span></h2>
+            <p class="editorial-text" style="opacity: 1; margin-top: 20px;">
+                Nuestro equipo de asesores senior está disponible para coordinar visitas privadas y gestionar los detalles de su estadía Gold.
+            </p>
+        </div>
+        
+        <form id="editorial-form" class="glass-premium" onsubmit="return false;">
+            <div class="input-row">
+                <div class="input-group">
+                    <label class="filter-label">Nombre Completo</label>
+                    <input type="text" class="gold-input" placeholder="Ej. Alexander von Stein">
+                </div>
+                <div class="input-group">
+                    <label class="filter-label">Email Corporativo</label>
+                    <input type="email" class="gold-input" placeholder="alex@empresa.com">
+                </div>
+            </div>
+            <div class="input-group" style="margin-top: 20px;">
+                <label class="filter-label">Mensaje / Requerimientos Especiales</label>
+                <textarea class="gold-input" style="height: 100px; resize: none;" placeholder="Describa el tipo de activo que busca..."></textarea>
+            </div>
+            <button class="btn-confirm-reserva" style="margin-top: 30px;">Enviar Solicitud</button>
+        </form>
+    </div>
+</section>
+
+   <footer class="mega-footer glass">
+    <div class="footer-container">
+        <div class="footer-column reveal">
+            <div class="logo">URBAN<span class="metallic-loft">LOFT</span></div>
+            <p class="footer-bio">
+                Curadores de activos inmobiliarios de alto rendimiento. <br>
+                Definiendo el estándar Gold en los distritos <br>
+                financieros más influyentes del mundo.
+            </p>
+            
+            <div class="developer-credit">
+                <span class="dev-label">Desarrollado por</span>
+                <a href="https://portfolionicolasaguirres.netlify.app/" target="_blank" class="dev-name">Nicolas Aguirres</a>
+            </div>
+            
+            <div class="social-minimal">
+                <a href="https://portfolionicolasaguirres.netlify.app/" target="_blank" class="social-link">Portfolio Profesional</a>
+            </div>
+        </div>
+
+        <div class="footer-column reveal">
+            <h4 class="footer-h4">Newsletter Elite</h4>
+            <p class="footer-subtext">Acceso prioritario a nuevos activos "Off-Market".</p>
+            <div class="newsletter-gold">
+                <input type="email" placeholder="Email corporativo..." class="gold-input">
+                <button class="btn-arrow-gold">SUSCRIBIRSE</button>
+            </div>
+        </div>
+
+        <div class="footer-column reveal">
+            <h4 class="footer-h4">Instagram Boutique</h4>
+            <div id="insta-feed" class="insta-grid-legacy"></div>
+            <span class="insta-tag">@urbanloft_heritage</span>
+        </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+        <p>&copy; 2024 Urban Loft Heritage. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+        </div>
+    </div>
+</footer>
+    <div id="modal-container" class="modal-overlay">
+    <div class="modal-window glass-premium">
+        <button class="close-btn" onclick="closeModal()">&times;</button>
+        <div id="modal-details">
+            </div>
+    </div>
+</div>
+
+    <audio id="click-sound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3" preload="auto"></audio>
+    <audio id="ambient-music" src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
